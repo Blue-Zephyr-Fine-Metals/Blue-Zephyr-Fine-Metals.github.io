@@ -48,6 +48,23 @@
         a.etsy {
             color:#D15600;
         }
+
+        div.owl-carousel.owl-theme div.item div {
+            display: block;
+            width: 300px;
+            height: 300px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            background-color: #999;
+        }
+
+        @media (min-width: 600px) {
+            div.owl-carousel.owl-theme div.item div {
+                width: 500px;
+                height: 500px;
+            }
+        }
     </style>
 </head>
 
@@ -55,15 +72,27 @@
 <h1><img title="Blue Zephyr Fine Metals" src="logo.jpg"></h1>
 
 <div class="owl-carousel owl-theme">
-    <div class="item"><img src="slideshow/market.jpg"></div>
-    <div class="item"><img src="slideshow/bracelet.jpg"></div>
-    <div class="item"><img src="slideshow/necklace.jpg"></div>
-    <div class="item"><img src="slideshow/earings.jpg"></div>
-    <div class="item"><img src="slideshow/jewlery.jpg"></div>
-    <div class="item"><img src="slideshow/necklace_2.jpg"></div>
-    <div class="item"><img src="slideshow/pendant.jpg"></div>
-    <div class="item"><img src="slideshow/ring.jpg"></div>
-    <div class="item"><img src="slideshow/necklace_3.jpg"></div>
+    <div class="item">
+        <div style="background-image:url(slideshow/market.jpg);"></div>
+    </div>
+    <div class="item">
+        <div style="background-image:url(slideshow/necklace.jpg);"></div>
+    </div>
+    <div class="item">
+        <div style="background-image:url(slideshow/earings.jpg);"></div>
+    </div>
+    <div class="item">
+        <div style="background-image:url(slideshow/jewlery.jpg);"></div>
+    </div>
+    <div class="item">
+        <div style="background-image:url(slideshow/necklace_2.jpg);"></div>
+    </div>
+    <div class="item">
+        <div style="background-image:url(slideshow/pendant.jpg);"></div>
+    </div>
+    <div class="item">
+        <div style="background-image:url(slideshow/necklace_3.jpg);"></div>
+    </div>
 </div>
 
 <p class="social_links">
@@ -82,7 +111,6 @@
     $('.owl-carousel').owlCarousel({
         loop:true,
         autoWidth:true,
-        items:2,
         center:true,
         autoplay:true,
         autoplayTimeout:2000
